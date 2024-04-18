@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: 'Roboto';
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.owl-stage {
+    display: flex;
+}
+
+.mat-typography {
+    display: flex;
+    flex-direction: column;
+}
+
+.owl-item {
+    flex: none;
+}
+
+app-root {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+app-footer {
+    position: relative;
+    width: 100%;
+}
+
+app-login {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1025px) {
+    app-footer {
+        position: relative;
+        width: 100%;
+        top: 10%;
+    } 
+}
+
+@media screen and (max-width: 767px) {
+    app-login {
+        height: 60%;
+    }
+
+    app-footer {
+        position: relative;
+        width: 100%;
+    }    
+}
+
+@media screen and (min-width: 1025px) {
+    app-login {
+        height: 80%;
+    }
+}

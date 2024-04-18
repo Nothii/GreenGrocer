@@ -1,0 +1,75 @@
+li {
+    list-style: none;
+}
+
+p {
+    padding: 5%;
+}
+
+img {
+    border-radius: 5%;
+}
+
+.who-are-we-title {
+    font-size: 36px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    li {
+        flex-direction: column;
+    }
+
+    img {
+        width: 60%;
+    }
+
+    ul {
+        overflow-x: hidden;
+    }
+
+    .yusuf-seha-ozturk, .eray-demir, .hasan-bora-ulker, .batu-gulen {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .yusuf-seha-ozturk, .hasan-bora-ulker{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .eray-demir, .batu-gulen {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    img {
+        width: 20%;
+    }
+
+    .eray-demir, .batu-gulen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .yusuf-seha-ozturk, .hasan-bora-ulker {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
